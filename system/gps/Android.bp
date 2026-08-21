@@ -10,7 +10,7 @@ soong_namespace {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.gnss-V8-cpp",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -35,7 +35,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libqcc",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -74,7 +74,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libqcc_file_agent_sys",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -100,7 +100,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libqcc_netstats",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -130,7 +130,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libqccdme",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -170,7 +170,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libqccfileservice",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -209,7 +209,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.qccsyshal@1.0",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -237,7 +237,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.qccsyshal@1.1",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -266,7 +266,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.qccsyshal@1.2-halimpl",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -301,7 +301,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.qccsyshal@1.2",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -331,7 +331,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.qccvndhal@1.0",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -359,7 +359,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.qccsyshal_aidl-V1-ndk",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -386,7 +386,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.qccsyshal_aidl-halimpl",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -420,7 +420,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.qccvndhal_aidl-V1-ndk",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -447,7 +447,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.qccvndhal_aidl-V2-ndk",
-    owner: "qcom",
+    owner: "qcom-caf",
     strip: {
         none: true,
     },
@@ -474,7 +474,7 @@ cc_prebuilt_library_shared {
 
 android_app_import {
     name: "QCC",
-    owner: "qcom",
+    owner: "qcom-caf",
     apk: "proprietary/system_ext/app/QCC/QCC.apk",
     certificate: "platform",
     dex_preopt: {
@@ -485,7 +485,7 @@ android_app_import {
 
 android_app_import {
     name: "com.qualcomm.location",
-    owner: "qcom",
+    owner: "qcom-caf",
     apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
     certificate: "platform",
     dex_preopt: {
@@ -497,7 +497,7 @@ android_app_import {
 
 dex_import {
     name: "com.qti.location.sdk",
-    owner: "qcom",
+    owner: "qcom-caf",
     jars: [
         "proprietary/system_ext/framework/com.qti.location.sdk.jar",
     ],
@@ -506,7 +506,7 @@ dex_import {
 
 prebuilt_etc_xml {
     name: "vendor.qti.qccsyshal_aidl-service.xml",
-    owner: "qcom",
+    owner: "qcom-caf",
     src: "proprietary/system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
@@ -515,7 +515,7 @@ prebuilt_etc_xml {
 
 cc_prebuilt_binary {
     name: "loc_sys_service",
-    owner: "qcom",
+    owner: "qcom-caf",
     target: {
         android_arm64: {
             srcs: [
@@ -545,7 +545,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "qccsyshal@1.2-service",
-    owner: "qcom",
+    owner: "qcom-caf",
     target: {
         android_arm64: {
             srcs: [
@@ -580,7 +580,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "qccsyshal_aidl-service",
-    owner: "qcom",
+    owner: "qcom-caf",
     target: {
         android_arm64: {
             srcs: [
